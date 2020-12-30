@@ -1,0 +1,2 @@
+# {{{{cの全てが英小文字の}}とき{{cを英大文字に変換した文字列}}、そうでなければ{{{{cの全てが英大文字の}}とき{{cを英小文字に変換した文字列}}、そうでなければ{{input()の各要素をcとし、cの列}}}}}}を文字列''で連結した文字列を出力する
+print(''.join(c.upper() if c.islower() else c.lower() if c.isupper() else c for c in input()))
