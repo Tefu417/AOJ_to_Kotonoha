@@ -54,17 +54,11 @@ Syntax Error ((unknown source):27:0+403)
 Syntax Error ((unknown source):14:18+229)
 elif n % 2 == 0 :
         ^
-Syntax Error ((unknown source):14:-1+241)
-except :
-
 Syntax Error ((unknown source):13:18+297)
 print(f"{x:.3f} {y:.3f}")
         ^
-Syntax Error ((unknown source):8:-1+77)
-else :
-
-Syntax Error ((unknown source):21:-1+354)
-except :
+Syntax Error ((unknown source):3:10+28)
+@functools.lru_cache(maxsize = 30)
 
 '''  reverse=真 とは出ない？  '''
 # Mと((reverse, 真))からなる辞書をソートした列をMsとする
