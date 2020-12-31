@@ -1,0 +1,1030 @@
+# "Hello World"を出力する
+print("Hello World")
+# 入力された文字列の整数値をxとする
+x = int(input())
+# xの3乗を出力する
+print(x ** 3)
+# 入力された文字列の整数値をWとする
+W = int(input())
+# Wに32を掛けた値を出力する
+print(W * 32)
+# 入力された文字列の整数値をFとする
+F = int(input())
+# ({{Fから30を引いた値}})の組を2で割った商を出力する
+print((F - 30) // 2)
+# map(整数,入力された文字列を空白で分割した列)を展開し順にp、m、cとする
+p, m, c  = map(int, input().split())
+# {{pにmを加えた値}}にcを加えた値を出力する
+print(p + m + c)
+# map(整数,入力された文字列を空白で分割した列)を展開し順にaとbとする
+a, b  = map(int, input().split())
+# aにbを掛けた値をsとする
+s = a * b
+# aに2を掛けた値にbに2を掛けた値を加えた値をlとする
+l = a * 2 + b * 2
+# sとlを出力する
+print(s, l)
+# map(整数,入力された文字列を空白で分割した列)を展開し順にaとbとする
+a, b  = map(int, input().split())
+# aがbのとき、
+if a == b  :
+# "a == b"を出力する
+print("a == b")
+# ('aがbより小さい',)
+elif a < b  :
+# "a < b"を出力する
+print("a < b")
+# map(整数,入力された文字列を空白で分割した列)を展開し順にa、b、cとする
+a, b, c  = map(int, input().split())
+# aがbより小さく、かつbがcより小さいとき、
+if a < b and b < c  :
+# "Yes"を出力する
+print("Yes")
+# map(整数,入力された文字列を空白で分割した列)を展開し順にaとbとする
+a, b  = map(int, input().split())
+# ({{aにbを加えた値}})の組を2で割った商を出力する
+print((a + b) // 2)
+# map(整数,入力された文字列を空白で分割した列)を展開し順にx1とx2とする
+x1, x2  = map(int, input().split())
+# {{x1からx2を引いた値}}の絶対値を出力する
+print(abs(x1 - x2))
+# 入力された文字列をBとする
+B = input()
+# ("1 1 0"と"0 0 1")からなる列をOとする
+O = ["1 1 0", "0 0 1"]
+# BがOに含まれるとき、
+if B in O  :
+# "Open"を出力する
+print("Open")
+# 入力された文字列の整数値をSとする
+S = int(input())
+# Sを3600で割った商をhとする
+h = S // 3600
+# ({{Sから{{hに3600を掛けた値}}を引いた値}})の組を60で割った商をmとする
+m = (S - h * 3600) // 60
+# Sから({{{{hに3600を掛けた値}}に{{mに60を掛けた値}}を加えた値}})の組を引いた値をsとする
+s = S - (h * 3600 + m * 60)
+# h、":"、m、":"、s、((sep, ""))からなる辞書を出力する
+print(h, ":", m, ":", s, sep = "")
+# map(整数,入力された文字列を空白で分割した列)を展開し順にa、b、cとする
+a, b, c  = map(int, input().split())
+# aがbより小さいとき、
+if a < b  :
+# bがcより小さいとき、
+if b < c  :
+# a、b、cを出力する
+print(a, b, c)
+# ('aがcより小さい',)
+elif a < c  :
+# a、c、bを出力する
+print(a, c, b)
+# ('bがaより小さい',)
+elif b < a  :
+# aがcより小さいとき、
+if a < c  :
+# b、a、cを出力する
+print(b, a, c)
+# ('bがcより小さい',)
+elif b < c  :
+# b、c、aを出力する
+print(b, c, a)
+# map(整数,入力された文字列を空白で分割した列)を展開し順にW、H、x、y、rとする
+W, H, x, y, r  = map(int, input().split())
+# {{xからrを引いた値}}が0以上、かつ{{yからrを引いた値}}が0以上のとき、
+if x - r >= 0 and y - r >= 0  :
+# {{xにrを加えた値}}がW以下、かつ{{yにrを加えた値}}がH以下のとき、
+if x + r <= W and y + r <= H  :
+# "Yes"を出力する
+print("Yes")
+# map(整数,入力された文字列を空白で分割した列)を展開し順にe1、e2、e3、e4とする
+e1, e2, e3, e4  = map(int, input().split())
+# (e1、e2、e3、e4)からなる列をEとする
+E = [e1, e2, e3, e4]
+# Eの集合をeとする
+e = set(E)
+# 'eのリストをe_listとする
+e_list = list(e)
+# eの長さが2のとき、
+if len(e) == 2  :
+# E内のe_listの最初値の出現をカウントした整数が2のとき、
+if E.count(e_list[0]) == 2  :
+# "yes"を出力する
+print("yes")
+# map(整数,入力された文字列を空白で分割した列)を展開し順にN、A、B、C、Dとする
+N, A, B, C, D  = map(int, input().split())
+# NをAで割った商をaとする
+a = N // A
+# NをCで割った商をcとする
+c = N // C
+# aにAを掛けた値がNより小さいとき、
+if a * A < N  :
+# cにCを掛けた値がNより小さいとき、
+if c * C < N  :
+# aにBを掛けた値をbとする
+b = a * B
+# cにDを掛けた値をdとする
+d = c * D
+# bがdより小さいとき、
+if b < d  :
+# bを出力する
+print(b)
+# '0から1000未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(1000)  :
+# "Hello World"を出力する
+print("Hello World")
+# ((1, 6000)、(2, 4000)、(3, 3000)、(4, 2000))からなる辞書をdicとする
+dic = {1 : 6000, 2 : 4000, 3 : 3000, 4 : 2000}
+# '0から4未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(4)  :
+# map(整数,入力された文字列を空白で分割した列)を展開し順にtとnとする
+t, n  = map(int, input().split())
+# dic(t)にnを掛けた値を出力する
+print(dic[t] * n)
+# '0から7未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(7)  :
+# map(整数,入力された文字列を空白で分割した列)を展開し順にaとbとする
+a, b  = map(int, input().split())
+# aからbを引いた値を出力する
+print(a - b)
+# '0から9未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(9)  :
+# map(str,入力された文字列を空白で分割した列)を展開し順にe、a、bとする
+e, a, b  = map(str, input().split())
+# aの整数値をaとする
+a = int(a)
+# bの整数値をbとする
+b = int(b)
+# e、aにbを加えた値、{{aに200を掛けた値}}に{{bに300を掛けた値}}を加えた値を出力する
+print(e, a + b, a * 200 + b * 300)
+# 0をsとする
+s = 0
+# '0から10未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(10)  :
+# sを出力する
+print(s)
+# 0をiとする
+i = 0
+# 真の間、繰り返す
+while True :
+# 入力された文字列の整数値をxとする
+x = int(input())
+# xが0のとき、
+if x == 0  :
+# 繰り返すのを中断する
+break
+# 真の間、繰り返す
+while True :
+# map(整数,入力された文字列を空白で分割した列)を展開し順にxとyとする
+x, y  = map(int, input().split())
+# xが0、かつyが0のとき、
+if x == 0 and y == 0  :
+# 繰り返すのを中断する
+break
+# 入力された文字列の整数値をNとする
+N = int(input())
+# '0からN未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(N)  :
+# map(整数,入力された文字列を空白で分割した列)を展開し順にa、b、cとする
+a, b, c  = map(int, input().split())
+# (a、b、c)からなる列をLとする
+L = [a, b, c]
+# L.pop(L.index(max(L)))をmとする
+m = L.pop(L.index(max(L)))
+# L(0)の2乗にL(1)の2乗を加えた値をsとする
+s = L[0] ** 2 + L[1] ** 2
+# mの2乗がsのとき、
+if m ** 2 == s  :
+# "YES"を出力する
+print("YES")
+# 入力された文字列の整数値をnとする
+n = int(input())
+# 100000をsとする
+s = 100000
+# '0からn未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(n)  :
+# sを1000で割った余りをmとする
+m = s % 1000
+# mが0と等しくないとき、
+if m != 0  :
+# sからmを引いた値に1000を加えた値をsとする
+s = s - m + 1000
+# sの整数値を出力する
+print(int(s))
+# 真の間、繰り返す
+while True :
+# 入力された文字列の整数値をnとする
+n = int(input())
+# 0をsとする
+s = 0
+# nが0のとき、
+if n == 0  :
+# 繰り返すのを中断する
+break
+# sを出力する
+print(s)
+# map(整数,入力された文字列を空白で分割した列)を展開し順にa、b、cとする
+a, b, c  = map(int, input().split())
+# 0をsとする
+s = 0
+# 'aからbに1を加えた値未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(a, b + 1)  :
+# cをiで割った余りが0のとき、
+if c % i == 0  :
+# sを出力する
+print(s)
+# '1から10未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(1, 10)  :
+# '1から10未満までの数列の各要素を順にjとして、繰り返す
+for j  in range(1, 10)  :
+# i、"x"、j、"="、iにjを掛けた値、((sep, ""))からなる辞書を出力する
+print(i, "x", j, "=", i * j, sep = "")
+# 真の間、繰り返す
+while True :
+# map(整数,入力された文字列を空白で分割した列)を展開し順にHとWとする
+H,W = map(int,input().split())
+# Hが0、かつWが0のとき、
+if H==0 and W==0 :
+# 繰り返すのを中断する
+break
+# '0からH未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(H) :
+# '0からW未満までの数列の各要素を順にjとして、繰り返す
+for j  in range(W) :
+# "#"と((end, ""))からなる辞書を出力する
+print("#",end="")
+# 空行を出力する
+print()
+# 空行を出力する
+print()
+# 真の間、繰り返す
+while True :
+# map(整数,入力された文字列を空白で分割した列)を展開し順にHとWとする
+H, W  = map(int, input().split())
+# Hが0のとき、
+if H == 0  :
+# 繰り返すのを中断する
+break
+# 真の間、繰り返す
+while True :
+# map(整数,入力された文字列を空白で分割した列)を展開し順にHとWとする
+H, W  = map(int, input().split())
+# Hが0のとき、
+if H == 0  :
+# 繰り返すのを中断する
+break
+# 真の間、繰り返す
+while True :
+# map(str,入力された文字列を空白で分割した列)を展開し順にa、op、bとする
+a, op, b  = map(str, input().split())
+# aの整数値をaとする
+a = int(a)
+# bの整数値をbとする
+b = int(b)
+# opが"?"のとき、
+if op == "?"  :
+# 繰り返すのを中断する
+break
+# 入力された文字列の整数値をnとする
+n = int(input())
+# {{入力された文字列を空白で分割した列}}の各要素をaとし、aの整数値の列をAとする
+A = [int(a) for a in input().split()]
+# Aの最小値、Aの最大値、Aの総和を出力する
+print(min(A), max(A), sum(A))
+# 真の間、繰り返す
+while True :
+# 入力された文字列の整数値をnとする
+n = int(input())
+# 空列をPとする
+P = []
+# nが0のとき、
+if n == 0  :
+# 繰り返すのを中断する
+break
+# 真の間、繰り返す
+while True :
+# 入力された文字列の整数値をnとする
+n = int(input())
+# nが0のとき、
+if n == 0  :
+# 繰り返すのを中断する
+break
+# 入力された文字列の整数値をnとする
+n = int(input())
+# {{入力された文字列を空白で分割した列}}の各要素をaとし、aの整数値の列をAとする
+A = [int(a) for a in input().split()]
+# 'nから1を引いた値から-1未満までの-1間隔の数列の各要素を順にiとして、繰り返す
+for i  in range(n - 1, -1, -1)  :
+# iが0のとき、
+if i == 0  :
+# A(i)を出力する
+print(A[i])
+# 0をsとする
+s = 0
+# '0から5未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(5)  :
+# 入力された文字列の整数値をpとする
+p = int(input())
+# pが40より小さいとき、
+if p < 40  :
+# sを5で割った商を出力する
+print(s // 5)
+# 空列をSiとする
+Si = []
+# 空列をSoとする
+So = []
+# '0から4未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(4)  :
+# 入力された文字列の整数値をpとする
+p = int(input())
+# Si.append(p)
+Si.append(p)
+# '0から2未満までの数列の各要素を順にjとして、繰り返す
+for j  in range(2)  :
+# 入力された文字列の整数値をpとする
+p = int(input())
+# So.append(p)
+So.append(p)
+# {{Siの総和からSiの最小値を引いた値}}にSoの総和を加えた値からSoの最小値を引いた値をsとする
+s = sum(Si) - min(Si) + sum(So) - min(So)
+# sを出力する
+print(s)
+# 空列をWとする
+W = []
+# 空列をKとする
+K = []
+# '0から10未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(10)  :
+# W.append(int(input()))
+W.append(int(input()))
+# '0から10未満までの数列の各要素を順にjとして、繰り返す
+for j  in range(10)  :
+# K.append(int(input()))
+K.append(int(input()))
+# Wと((reverse, 真))からなる辞書をソートした列をWsとする
+Ws = sorted(W, reverse = True)
+# Kと((reverse, 真))からなる辞書をソートした列をKsとする
+Ks = sorted(K, reverse = True)
+# 0をwとする
+w = 0
+# 0をkとする
+k = 0
+# '0から3未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(3)  :
+# wとkを出力する
+print(w, k)
+# {{'1から31未満までの数列}}の各要素をiとし、iの列をAとする
+A = [i for i in range(1, 31)]
+# 空列をNとする
+N = []
+# '0から28未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(28)  :
+# 入力された文字列の整数値をnとする
+n = int(input())
+# N.append(n)
+N.append(n)
+# 'Aの集合からNの集合を引いた値のリストをRとする
+R = list(set(A) - set(N))
+# Rの最小値を出力する
+print(min(R))
+# Rの最大値を出力する
+print(max(R))
+# 入力された文字列の整数値をnとする
+n = int(input())
+# {{入力された文字列を空白で分割した列}}の各要素をxとし、xの整数値の列をXとする
+X = [int(x) for x in input().split()]
+# Xの最大値からXの最小値を引いた値をsubとする
+sub = max(X) - min(X)
+# subを2で割った余りが0のとき、
+if sub % 2 == 0  :
+# subを2で割った商を出力する
+print(sub // 2)
+# 真の間、繰り返す
+while True :
+# map(整数,入力された文字列を空白で分割した列)を展開し順にnとkとする
+n, k  = map(int, input().split())
+# nが0のとき、
+if n == 0  :
+# 繰り返すのを中断する
+break
+# 空列をMとする
+M = []
+# '0から10未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(10)  :
+# M.append(int(input()))
+M.append(int(input()))
+# Mと((reverse, 真))からなる辞書をソートした列をMsとする
+Ms = sorted(M, reverse = True)
+# '0から3未満までの数列の各要素を順にjとして、繰り返す
+for j  in range(3)  :
+# Ms(j)を出力する
+print(Ms[j])
+# 真の間、繰り返す
+while True :
+# 入力された文字列の整数値をnとする
+n = int(input())
+# nが0のとき、
+if n == 0  :
+# 繰り返すのを中断する
+break
+# 入力された文字列を英大文字に変換した文字列を出力する
+print(input().upper())
+# 入力された文字列の英大文字を英小文字、英小文字を英大文字に変換した文字列を出力する
+print(input().swapcase())
+# "abcdefghijklmnopqrstuvwxyz"をaとする
+a = "abcdefghijklmnopqrstuvwxyz"
+# {{'0から26未満までの数列}}の各要素をiとし、0の列をAとする
+A = [0 for i in range(26)]
+# 真の間、繰り返す
+while True :
+# '0から26未満までの数列の各要素を順にjとして、繰り返す
+for j  in range(26)  :
+# a(j)、":"、A(j)を出力する
+print(a[j], ":", A[j])
+# 真の間、繰り返す
+while True :
+# 入力された文字列をnとする
+n = input()
+# nが"0"のとき、
+if n == "0"  :
+# 繰り返すのを中断する
+break
+# 入力された文字列をnとする
+n = input()
+# ("K"、"U"、"P"、"C")からなる列をKUPCとする
+KUPC = ["K", "U", "P", "C"]
+# {{'0から4未満までの数列}}の各要素をiとし、0の列をkupcとする
+kupc = [0 for i in range(4)]
+# '0からnの長さ未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(n))  :
+# n(i)がKUPCに含まれるとき、
+if n[i] in KUPC  :
+# kupcの最小値を出力する
+print(min(kupc))
+# 入力された文字列をWとする
+W = input()
+# 0をcntとする
+cnt = 0
+# 真の間、繰り返す
+while True :
+# 入力された文字列をtとする
+t = input()
+# tが"END_OF_TEXT"のとき、
+if t == "END_OF_TEXT"  :
+# 繰り返すのを中断する
+break
+# cntを出力する
+print(cnt)
+# 入力された文字列をsとする
+s = input()
+# 入力された文字列をpとする
+p = input()
+# sに2を掛けた値をSとする
+S = s * 2
+# pがSに含まれるとき、
+if p in S  :
+# "Yes"を出力する
+print("Yes")
+# 入力された文字列をTとする
+T = input()
+# 入力された文字列をPとする
+P = input()
+# Pの長さをlとする
+l = len(P)
+# '0から{{Tの長さからlを引いた値}}に1を加えた値未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(T) - l + 1)  :
+# Tの位置iから位置{{iにlを加えた値}}までの部分がPのとき、
+if T[i : i + l] == P  :
+# iを出力する
+print(i)
+# 真の間、繰り返す
+while True :
+# 入力された文字列をCとする
+C = input()
+# Cが"-"のとき、
+if C == "-"  :
+# 繰り返すのを中断する
+break
+# 入力された文字列の整数値をnとする
+n = int(input())
+# 0をtとする
+t = 0
+# 0をhとする
+h = 0
+# '0からn未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(n)  :
+# map(str,入力された文字列を空白で分割した列)を展開し順にTとHとする
+T, H  = map(str, input().split())
+# TがHより大きいとき、
+if T > H  :
+# ('TがHより小さい',)
+elif T < H  :
+# tとhを出力する
+print(t, h)
+# 真の間、繰り返す
+while True :
+# 入力された文字列をd1とする
+d1 = input()
+# d1が"0"のとき、
+if d1 == "0"  :
+# 繰り返すのを中断する
+break
+# 真の間、繰り返す
+while True :
+# map(整数,入力された文字列を空白で分割した列)を展開し順にm、f、rとする
+m, f, r  = map(int, input().split())
+# {{mが-1}}、かつ{{fが-1かどうか}}、かつrが-1のとき、
+if m == -1 and f == -1 and r == -1  :
+# 繰り返すのを中断する
+break
+# 真の間、繰り返す
+while True :
+# map(整数,入力された文字列を空白で分割した列)を展開し順にnとxとする
+n, x  = map(int, input().split())
+# nが0のとき、
+if n == 0  :
+# 繰り返すのを中断する
+break
+# 入力された文字列の整数値をnとする
+n = int(input())
+# {{'1から14未満までの数列}}の各要素をiとし、iの列をSとする
+S = [i for i in range(1, 14)]
+# {{'1から14未満までの数列}}の各要素をiとし、iの列をHとする
+H = [i for i in range(1, 14)]
+# {{'1から14未満までの数列}}の各要素をiとし、iの列をCとする
+C = [i for i in range(1, 14)]
+# {{'1から14未満までの数列}}の各要素をiとし、iの列をDとする
+D = [i for i in range(1, 14)]
+# '0からn未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(n)  :
+# map(str,入力された文字列を空白で分割した列)を展開し順にmとrとする
+m, r  = map(str, input().split())
+# mが"S"のとき、
+if m == "S"  :
+# Sからrの整数値を取り除いた集まり
+S.remove(int(r))
+# ('mが"H"の',)
+elif m == "H"  :
+# Hからrの整数値を取り除いた集まり
+H.remove(int(r))
+# ('mが"C"の',)
+elif m == "C"  :
+# Cからrの整数値を取り除いた集まり
+C.remove(int(r))
+# Sの長さが0より大きいとき、
+if len(S) > 0  :
+# '0からSの長さ未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(S))  :
+# "S"とS(i)を出力する
+print("S", S[i])
+# Hの長さが0より大きいとき、
+if len(H) > 0  :
+# '0からHの長さ未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(H))  :
+# "H"とH(i)を出力する
+print("H", H[i])
+# Cの長さが0より大きいとき、
+if len(C) > 0  :
+# '0からCの長さ未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(C))  :
+# "C"とC(i)を出力する
+print("C", C[i])
+# Dの長さが0より大きいとき、
+if len(D) > 0  :
+# '0からDの長さ未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(D))  :
+# "D"とD(i)を出力する
+print("D", D[i])
+# map(整数,入力された文字列を空白で分割した列)を展開し順にnとmとする
+n, m  = map(int, input().split())
+# 空列をAとする
+A = []
+# 空列をBとする
+B = []
+# '0からn未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(n)  :
+# A.append([int(a) for a in input().split()])
+A.append([int(a) for a in input().split()])
+# '0からm未満までの数列の各要素を順にjとして、繰り返す
+for j  in range(m)  :
+# B.append(int(input()))
+B.append(int(input()))
+# 空列をCとする
+C = []
+# '0からn未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(n)  :
+# 0をcとする
+c = 0
+# '0からm未満までの数列の各要素を順にjとして、繰り返す
+for j  in range(m)  :
+# C.append(c)
+C.append(c)
+# '0からn未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(n)  :
+# C(i)を出力する
+print(C[i])
+# map(整数,入力された文字列を空白で分割した列)を展開し順にn、m、lとする
+n, m, l  = map(int, input().split())
+# 空列をAとする
+A = []
+# 空列をBとする
+B = []
+# '0からn未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(n)  :
+# A.append([int(a) for a in input().split()])
+A.append([int(a) for a in input().split()])
+# '0からm未満までの数列の各要素を順にjとして、繰り返す
+for j  in range(m)  :
+# B.append([int(b) for b in input().split()])
+B.append([int(b) for b in input().split()])
+# 空列をCとする
+C = []
+# 空列をLとする
+L = []
+# 0をsとする
+s = 0
+# '0からl未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(l)  :
+# '0からn未満までの数列の各要素を順にjとして、繰り返す
+for j  in range(n)  :
+# '0からm未満までの数列の各要素を順にkとして、繰り返す
+for k  in range(m)  :
+# L.append(s)
+L.append(s)
+# 0をsとする
+s = 0
+# C.append(L[i * n : i * n + n])
+C.append(L[i * n : i * n + n])
+# '0からn未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(n)  :
+# '0からl未満までの数列の各要素を順にjとして、繰り返す
+for j  in range(l)  :
+# jがlから1を引いた値のとき、
+if j == l - 1  :
+# C(j)(i)を出力する
+print(C[j][i])
+# map(整数,入力された文字列を空白で分割した列)を展開し順にrとcとする
+r, c  = map(int, input().split())
+# 空列をAとする
+A = []
+# '0からr未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(r)  :
+# A.append([int(a) for a in input().split()])
+A.append([int(a) for a in input().split()])
+# A[i].append(sum(A[i]))
+A[i].append(sum(A[i]))
+# 空列をSとする
+S = []
+# '0からcに1を加えた値未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(c + 1)  :
+# 0をsとする
+s = 0
+# '0からr未満までの数列の各要素を順にjとして、繰り返す
+for j  in range(r)  :
+# S.append(s)
+S.append(s)
+# A.append(S)
+A.append(S)
+# '0からrに1を加えた値未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(r + 1)  :
+# '0からcに1を加えた値未満までの数列の各要素を順にjとして、繰り返す
+for j  in range(c + 1)  :
+# jがcのとき、
+if j == c  :
+# A(i)(j)を出力する
+print(A[i][j])
+# 入力された文字列の整数値をnとする
+n = int(input())
+# nをnnとする
+nn = n
+# 空列をNとする
+N = []
+# n、":"、((sep, "")と(end, " "))からなる辞書を出力する
+print(n, ":", sep = "", end = " ")
+# nを2で割った余りが0のとき、
+if n % 2 == 0  :
+# nを2で割った余りが0の間、繰り返す
+while n % 2 == 0  :
+# N.append(2)
+N.append(2)
+# '3からnnの(1 / 2)の組乗の整数値に1を加えた値未満までの2間隔の数列の各要素を順にiとして、繰り返す
+for i  in range(3, int(nn ** (1 / 2)) + 1, 2)  :
+# nをiで割った余りが0の間、繰り返す
+while n % i == 0  :
+# N.append(i)
+N.append(i)
+# nが1と等しくないとき、
+if n != 1  :
+# N.append(n)
+N.append(n)
+# Nの長さが0のとき、
+if len(N) == 0  :
+# nを出力する
+print(n)
+# map(整数,入力された文字列を空白で分割した列)を展開し順にmとnとする
+m, n  = map(int, input().split())
+# 1000000007をmodとする
+mod = 1000000007
+# mのn乗に対するmodの剰余を出力する
+print(pow(m, n, mod))
+# 真の間、繰り返す
+while True :
+# map(整数,入力された文字列を空白で分割した列)を展開し順にaとbとする
+a, b  = map(int, input().split())
+# aが0のとき、
+if a == 0  :
+# 繰り返すのを中断する
+break
+# mathモジュールを用いる
+import math
+# 入力された文字列の整数値をnとする
+n = int(input())
+# {{入力された文字列を空白で分割した列}}の各要素をaとし、aの整数値の列をAとする
+A = [int(a) for a in input().split()]
+# Aの最初値をansとする
+ans = A[0]
+# '1からn未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(1, n)  :
+# ansにA(i)を掛けた値をmath.gcd(ans, A[i])で割った商をansとする
+ans = ans * A[i] // math.gcd(ans, A[i])
+# ansを出力する
+print(ans)
+# mathモジュールを用いる
+import math
+# map(整数,入力された文字列を空白で分割した列)を展開し順にxとyとする
+x, y  = map(int, input().split())
+# math.gcd(x, y)を出力する
+print(math.gcd(x, y))
+# mathモジュールを用いる
+import math
+# 入力された文字列の整数値をnとする
+n = int(input())
+# 0をcntとする
+cnt = 0
+# '2からmath.sqrt(a)の整数値に1を加えた値未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(2, int(math.sqrt(a)) + 1)  :
+# aをiで割った余りが0のとき、
+if a % i == 0  :
+# 偽を関数出力とする
+return False
+# 真を関数出力とする
+return True
+# '0からn未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(n)  :
+# prime(入力された文字列の整数値)のとき、
+if prime(int(input()))  :
+# cntを出力する
+print(cnt)
+# reモジュールを用いる
+import re
+# 入力された文字列を空白で分割した列をIとする
+I = input().split()
+# 空列をSとする
+S = []
+# '0からIの長さ未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(I))  :
+# 文字列I(i)を正規表現"[,.]"で分割した文字列リストをI[i] にする
+I[i]  = re.split("[,.]", I[i])
+# 2がI(i)の最初値の長さより小さく、かつI(i)の最初値の長さが7より小さいとき、
+if 2 < len(I[i][0]) and len(I[i][0]) < 7  :
+# S.append(I[i][0])
+S.append(I[i][0])
+# '0からSの長さ未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(S))  :
+# iがSの長さから1を引いた値のとき、
+if i == len(S) - 1  :
+# S(i)を出力する
+print(S[i])
+# 入力された文字列をSとする
+S = input()
+# -1をcntとする
+cnt = -1
+# '0からSの長さ未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(S))  :
+# iがSの長さから1を引いた値のとき、
+if i == len(S) - 1  :
+# Sの最初値を出力する
+print(S[0])
+# {{'65から{{65に26を加えた値}}未満までの数列}}の各要素をiとし、文字コードiの文字の列をAとする
+A = [chr(i) for i in range(65, 65 + 26)]
+# {{'68から{{68に23を加えた値}}未満までの数列}}の各要素をiとし、文字コードiの文字の列をDとする
+D = [chr(i) for i in range(68, 68 + 23)]
+# D.append("A")
+D.append("A")
+# D.append("B")
+D.append("B")
+# D.append("C")
+D.append("C")
+# 入力された文字列をnとする
+n = input()
+# 空列をANSとする
+ANS = []
+# '0からnの長さ未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(n))  :
+# ANS.append(A[D.index(n[i])])
+ANS.append(A[D.index(n[i])])
+# '0からANSの長さ未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(ANS))  :
+# iがANSの長さから1を引いた値のとき、
+if i == len(ANS) - 1  :
+# ANS(i)を出力する
+print(ANS[i])
+# 入力された文字列を空白で分割した列をSとする
+S = input().split()
+# 0をlとする
+l = 0
+# 0をnとする
+n = 0
+# "a"をLとする
+L = "a"
+# "a"をNとする
+N = "a"
+# '0からSの長さ未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(S))  :
+# S内のS(i)の出現をカウントした整数がnより大きいとき、
+if S.count(S[i]) > n  :
+# S内のS(i)の出現をカウントした整数をnとする
+n = S.count(S[i])
+# S(i)をNとする
+N = S[i]
+# '0からSの長さ未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(S))  :
+# S(i)の長さがlより大きいとき、
+if len(S[i]) > l  :
+# S(i)の長さをlとする
+l = len(S[i])
+# S(i)をLとする
+L = S[i]
+# NとLを出力する
+print(N, L)
+# 入力された文字列をsとする
+s = input()
+# 空列をSとする
+S = []
+# "apple"をaとする
+a = "apple"
+# "peach"をpとする
+p = "peach"
+# 空列をAとする
+A = []
+# 空列をPとする
+P = []
+# '0からsの長さ未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(s))  :
+# S.append(s[i])
+S.append(s[i])
+# '0から5未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(5)  :
+# A.append(a[i])
+A.append(a[i])
+# P.append(p[i])
+P.append(p[i])
+# '0からSの長さ未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(S))  :
+# Sの位置iから位置{{iに5を加えた値}}までの部分がAのとき、
+if S[i : i + 5] == A  :
+# PをS[i : i + 5] にする
+S[i : i + 5]  = P
+# ('Sの位置iから位置{{iに5を加えた値}}までの部分がPの',)
+elif S[i : i + 5] == P  :
+# AをS[i : i + 5] にする
+S[i : i + 5]  = A
+# '0からSの長さ未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(S))  :
+# iがSの長さから1を引いた値のとき、
+if i == len(S) - 1  :
+# S(i)を出力する
+print(S[i])
+# 真の間、繰り返す
+while True :
+# map(整数,入力された文字列を空白で分割した列)を展開し順にx、y、sとする
+x, y, s  = map(int, input().split())
+# xが0のとき、
+if x == 0  :
+# 繰り返すのを中断する
+break
+# 真の間、繰り返す
+while True :
+# map(整数,入力された文字列を空白で分割した列)を展開し順にnとmとする
+n, m  = map(int, input().split())
+# nが0のとき、
+if n == 0  :
+# 繰り返すのを中断する
+break
+# 真の間、繰り返す
+while True :
+# 入力された文字列の整数値をnとする
+n = int(input())
+# nが0のとき、
+if n == 0  :
+# 繰り返すのを中断する
+break
+# mathモジュールを用いる
+import math
+# 空列をPとする
+P = []
+# 123456に2を掛けた値をMaxとする
+Max = 123456 * 2
+# ''2からMax未満までの数列のリストをDとする
+D = list(range(2, Max))
+# math.sqrt(Max)をlimitとする
+limit = math.sqrt(Max)
+# 真の間、繰り返す
+while True :
+# Dの最初値をpとする
+p = D[0]
+# limitがp以下のとき、
+if limit <= p  :
+# Pを関数出力とする
+return P
+# P.append(p)
+P.append(p)
+# Dの各要素をdとし、{{{{dをpで割った余り}}が0と等しくない}}ときのdの列をDとする
+D = [d for d in D if d % p != 0]
+# Era(P,Max)をeとする
+e = Era(P, Max)
+# 真の間、繰り返す
+while True :
+# 入力された文字列の整数値をnとする
+n = int(input())
+# nが0のとき、
+if n == 0  :
+# 繰り返すのを中断する
+break
+# map(整数,入力された文字列を空白で分割した列)を展開し順にN、T、Eとする
+N, T, E  = map(int, input().split())
+# 'map(整数,{{入力された文字列を空白で分割した列}})のリストをXとする
+X = list(map(int, input().split()))
+# '{{TからEを引いた値}}から{{{{TにEを加えた値}}に1を加えた値}}未満までの数列の各要素をiとし、iの列をtimeとする
+time = [i for i in range(T - E, T + E + 1)]
+# -2をclockとする
+clock = -2
+# '0からXの長さ未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(len(X))  :
+# '0からtimeの長さ未満までの数列の各要素を順にjとして、繰り返す
+for j  in range(len(time))  :
+# time(j)をX(i)で割った余りが0のとき、
+if time[j] % X[i] == 0  :
+# X.index(X[i])をclockとする
+clock = X.index(X[i])
+# clockに1を加えた値を出力する
+print(clock + 1)
+# 真の間、繰り返す
+while True :
+# 0をhantei3をhantei2とするとするをhantei1とする
+hantei1 = hantei2=  hantei3 = 0
+# 入力された文字列をnとする
+n = input()
+# nが'.'のとき、
+if n == '.' :
+# 繰り返すのを中断する
+break
+# 'nのリストをl_nとする
+l_n = list(n)
+# l_nの長さをlennとする
+lenn = len(l_n)
+# 空列をkakkoとする
+kakko = []
+# kakkoの長さをlenkakkoとする
+lenkakko = len(kakko)
+# '0からlenn未満までの数列の各要素を順にiとして、繰り返す
+for i  in range(lenn) :
+# {{l_n内の'('の出現をカウントした整数}}が{{l_n内の')'の出現をカウントした整数}}と等しくなく、または{{l_n内の'['の出現をカウントした整数}}が{{l_n内の']'の出現をカウントした整数}}と等しくないとき、
+if l_n.count('(') != l_n.count(')') or l_n.count('[') != l_n.count(']') :
+# 'no'を出力する
+print('no')
+# 繰り返すのを中断する
+break
+# l_n(i)が'('のとき、
+if l_n[i] == '(' :
+# kakko.append('maru')
+kakko.append('maru')
+# l_n(i)が'['のとき、
+if l_n[i] == '[' :
+# kakko.append('shikaku')
+kakko.append('shikaku')
+# kakkoの長さが0と等しくないとき、
+if len(kakko) != 0 :
+# kakko(-1)が'maru'のとき、
+if kakko[-1] == 'maru' :
+# l_n(i)が']'のとき、
+if l_n[i] == ']' :
+# 'no'を出力する
+print('no')
+# 繰り返すのを中断する
+break
+# kakko(-1)が'shikaku'のとき、
+if kakko[-1] == 'shikaku' :
+# l_n(i)が')'のとき、
+if l_n[i] == ')' :
+# 'no'を出力する
+print('no')
+# 繰り返すのを中断する
+break
+# l_n(i)が')'、またはl_n(i)が']'のとき、
+if l_n[i] == ')' or l_n[i] == ']' :
+# kakko.pop(-1)
+kakko.pop(-1)
+# hantei1が0のとき、
+if hantei1 == 0 :
+# 'yes'を出力する
+print('yes')
