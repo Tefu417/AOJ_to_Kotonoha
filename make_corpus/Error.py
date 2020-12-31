@@ -22,11 +22,19 @@ print(f"{s:.6f} {l:.6f}")
 Syntax Error ((unknown source):5:10+66)
 print(f"{S:.6f}")
 
-'''  PJタグ？が入ってくる  '''
-# aにAを掛けた値がNより小さいとき、
-if a * A < N  :
-# ([[#Name 'a'], [#Int '1']],)
-[[#Name 'a'], [#Int '1']]
+'''  PJタグ？が入ってくる
+    if文やfor文の中の処理がコードも出ない
+    elif文の出力は（）に囲われる形でいいのか  '''
+# TがHより大きいとき、
+if T > H  :
+# ([[#Name 't'], [#Int '3']],)
+[[#Name 't'], [#Int '3']]
+# ('TがHより小さい',)
+elif T < H  :
+# ([[#Name 'h'], [#Int '3']],)
+[[#Name 'h'], [#Int '3']]
+# tとhを出力する
+print(t, h)
 
 # '0から10未満までの数列の各要素を順にiとして、繰り返す
 for i  in range(10)  :
@@ -44,7 +52,8 @@ def Era (P, Max)  :
 # 関数primeを[#FuncParam [#ParamDecl name: [#Name 'a']]]のパラメータを持つように定義する
 def prime (a)  :
 
-'''  Syntax Error  '''
+'''  Syntax Error
+    try, except 取れない？  '''
 Syntax Error ((unknown source):43:-1+757)
 except :
 
