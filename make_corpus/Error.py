@@ -89,3 +89,55 @@ kakko.pop(-1)
 
 # math.gcd(x, y)を出力する
 print(math.gcd(x, y))
+
+# Goldbach(n)
+Goldbach(n)
+
+# x.sort(reverse=True)
+x.sort(reverse=True)
+
+# a.reverse()
+a.reverse()
+
+# Check(Tile,my_i,my_j,W,H)をTile_newとする
+Tile_new = Check(Tile, my_i, my_j, W, H)
+
+# mp.insert(0, [-1] * (w + 2))
+mp.insert(0, [-1] * (w + 2))
+
+# lst.extend([i + a for i in lst])
+lst.extend([i + a for i in lst])
+
+'''なんか違う'''
+# 3がx(i)の長さ以下かどうかが6以下のとき、
+if 3 <= len(x[i]) <= 6 :
+
+# *(a(i))を出力する
+print(*a[i])
+
+# nがxかどうかが0のとき、
+if n == x == 0 :
+
+# {{mがfかどうか}}がrかどうかが-1のとき、
+if m == f == r == -1 :
+
+# format(x)を出力する
+print('{:.8f}'.format(x))
+
+# math.sqrt(a**2 + b**2 - 2*a*b*math.cos(th))をc2とする
+c2 = math.sqrt(a**2 + b**2 - 2*a*b*math.cos(th))
+
+# nがkかどうかが0のとき、
+if n == k == 0 :
+
+# s({{iに2を加えた値}})と((end, ""))からなる辞書を出力する
+print(s[i+2], end="")
+
+# not in('*',siki)、かつnot in('/',siki)のとき、
+if '*' not in siki and '/' not in siki :
+
+# i、"x"、j、"="、iにjを掛けた値、((sep, ""))からなる辞書を出力する
+print(i, "x", j, "=", i*j, sep="")
+
+# テンプレートaをbでフォーマットした文字列を出力する
+print("{0:.5f} {1:.5f}".format(a, b))
